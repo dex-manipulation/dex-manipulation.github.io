@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <!--    <script type="text/x-mathjax-config">-->
+  <!--    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});-->
+  <!--    </script>-->
+  <script type="text/javascript"
+          src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Ingredients of Dexterous Manipulation</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="nav">
+  <div class="nav-container">
+    <!--                <a href="https://ai-workshops.github.io/generalizable-policy-learning-in-the-physical-world/index.html#">Home</a>-->
+    <!--                <a href="https://ai-workshops.github.io/generalizable-policy-learning-in-the-physical-world/index.html#intro">Introduction</a>-->
+    <!--                <a href="https://ai-workshops.github.io/generalizable-policy-learning-in-the-physical-world/index.html#call">Call for Papers</a>-->
+    <!--                <a href="https://ai-workshops.github.io/generalizable-policy-learning-in-the-physical-world/index.html#challenge">Challenge</a>-->
+    <!--                <a href="https://ai-workshops.github.io/generalizable-policy-learning-in-the-physical-world/index.html#schedule">Schedule</a>-->
+    <!--                <a href="https://ai-workshops.github.io/generalizable-policy-learning-in-the-physical-world/index.html#speakers">Speakers</a>-->
+    <!--                <a href="https://ai-workshops.github.io/generalizable-policy-learning-in-the-physical-world/index.html#contact">Contact</a>-->
+  </div>
+</div>
+
+<div class="title-container">
+  <div style="text-align: center;">
+    <!--                <div class="subtitle">The second workshop on</div>-->
+    <h1>Ingredients of Dexterous Manipulation</h1>
+    <div class="subtitle" style="color: #ccc; margin: 20px">
+      Tentative ICRA 2024 Workshop (Hybrid), May 13, 2024
+      <!--                    Tentative Workshop at the Conference of Robot Learning - CoRL 2023-->
+    </div>
+    <!--                <div class="subtitle" style="color: rgb(0, 0, 0); margin: 20px">-->
+    <!--                  ===-->
+    <!--                </div>-->
+    <!--                <div class="subtitle" style="color: #ccc; margin: 20px">-->
+    <!--                  <a href="https://youtu.be/1WXNquuj6CI"> Full recording of our workshop.</a>-->
+    <!--                </div>-->
+    <!--                <div class="subtitle" style="color: #ccc; margin: 20px">-->
+    <!--                  <b> <font color="red"> Attend our workshop <a href="https://iclr.cc/virtual/2022/workshop/4564"> here</a> </font> </b>, ICLR registration needed.-->
+    <!--                </div>-->
+  </div>
+</div>
+
+<div class="container">
+  <div class="section" id="intro">
+    <h2>Introduction</h2>
+
+    <p>
+      Dexterous manipulation is a grand challenge in robotics and a necessary step in performing many manipulation tasks
+      such as ones involving tool use. Today, many different approaches are being explored to tackle this problem:
+      underactuated soft hands, fully actuated rigid hands, model-based control, reinforcement learning, imitation
+      learning, experiments with many different tactile sensors, simulators for contact-based interactions, and many
+      others. Furthermore, there is little convergence on dexterous manipulation tasks being solved by different
+      research groups. Due to the diversity of approaches and lack of dialogue between different sub-communities,
+      quantifying progress and identifying challenges and opportunities is a formidable issue. We believe that big jumps
+      in dexterous manipulation will result from interdisciplinary work spanning the subfields of control, hardware,
+      sensor and simulation design. We aim to bring together researchers from these diverse communities to encourage
+      dialogue, identify avenues for collaboration and understand the status, challenges, and opportunities for
+      interdisciplinary work. For seasoned researchers, this workshop will be an avenue for exchanging ideas with a
+      diverse community. For students and early career researchers, this workshop will be an opportunity to understand
+      the landscape and future directions of dexterous manipulation.
+    </p>
+
+    <ul>
+      <li>Optimization/Learning/Planning for dexterous manipulation</li>
+      <li>Compliant control in dexterous manipulation</li>
+      <li>Teleoperation for dexterous manipulation</li>
+      <li>Novel manipulator mechanisms for dexterous manipulation</li>
+      <li>Low-cost hardware design for dexterous manipulation</li>
+      <li>Novel sensor designs enabling new dexterous manipulation capabilities</li>
+      <li>Tactile Sensing for dexterous manipulation</li>
+      <li>Simulation for contact-rich manipulation</li>
+      <li>...</li>
+    </ul>
+    <p></p>
+
+
+    <p>
+      This interdisciplinary workshop will convene researchers across disciplines to assess the status quo in dexterous
+      manipulation research and illuminate potential future directions worthy of pursuit.
+    </p>
+
+  </div>
+
+
+  <div class="section" id="speakers">
+    <h2>Invited Speakers</h2>
+    <p> listed alphabetically </p>
+    <div class="people">
+      <a href="https://www.tu.berlin/robotics">
+        <img src="images/speakers/brock_800.jpg">
+        <div>Oliver Brock</div>
+        <div class="aff">TU Berlin</div>
+      </a>
+      <a href="https://www.eng.yale.edu/grablab/index.html">
+        <img src="images/speakers/dollar.png">
+        <div>Aaron Dollar</div>
+        <div class="aff">Yale</div>
+      </a>
+      <a href="https://tml.stanford.edu/">
+        <img src="images/speakers/karen_liu.png">
+        <div>Karen Liu</div>
+        <div class="aff">Stanford</div>
+      </a>
+      <a href="https://www.lerrelpinto.com/">
+        <img src="images/speakers/pinto.jpg">
+        <div>Lerrel Pinto</div>
+        <div class="aff">NYU</div>
+      </a>
+      <a href="https://hughw19.github.io/">
+        <img src="images/speakers/he_protrait_2023.JPG">
+        <div>He Wang</div>
+        <div class="aff">PKU</div>
+      </a>
+    </div>
+    <div class="people">
+    </div>
+  </div>
+
+<!--  <div class="section" id="schedule">-->
+<!--    <h2>Workshop Schedule</h2>-->
+<!--    <ul></ul>-->
+<!--    <style type="text/css">-->
+<!--        .tg .tg-u4qn {-->
+<!--            background-color: #D9D9D9;-->
+<!--            text-align: left;-->
+<!--            vertical-align: bottom-->
+<!--        }-->
+<!--    </style>-->
+<!--    <table class="tg">-->
+<!--      <thead>-->
+<!--      <tr>-->
+<!--        <th class="tg-u4qn"><span style="background-color:#D9D9D9">Start Time (GMT+9)</span></th>-->
+<!--        <th class="tg-u4qn"><span style="background-color:#D9D9D9">End Time (GMT+9)</span></th>-->
+<!--        <th class="tg-u4qn"><span style="background-color:#D9D9D9">Event</span></th>-->
+<!--      </tr>-->
+<!--      </thead>-->
+<!--      <tbody>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">8:30:00 AM</td>-->
+<!--        <td class="tg-jkyp">8:40:00 AM</td>-->
+<!--        <td class="tg-za14">Intro and Opening Remark</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">8:40:00 AM</td>-->
+<!--        <td class="tg-jkyp">9:25:00 AM</td>-->
+<!--        <td class="tg-za14">Tutorial 1 (Hannah Stuart): Dexterous Hand Design </td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">9:55:00 AM</td>-->
+<!--        <td class="tg-jkyp">10:15:00 AM</td>-->
+<!--        <td class="tg-za14">Invited Talk (Ted Adelson)</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">10:20:00 AM</td>-->
+<!--        <td class="tg-jkyp">10:45:00 AM</td>-->
+<!--        <td class="tg-za14">Coffee Break and Poster Demo Session 1</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">10:50:00 AM</td>-->
+<!--        <td class="tg-jkyp">11:10:00 AM</td>-->
+<!--        <td class="tg-za14">Invited Talk (Oliver Brock)</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">11:15:00 AM</td>-->
+<!--        <td class="tg-jkyp">11:35:00 AM</td>-->
+<!--        <td class="tg-za14">Invited Talk (Mark Cutkosky)</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">11:40:00 AM</td>-->
+<!--        <td class="tg-jkyp">12:00:00 PM</td>-->
+<!--        <td class="tg-za14">Invited Talk (Karen Liu)</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">12:05:00 PM</td>-->
+<!--        <td class="tg-jkyp">12:30:00 PM</td>-->
+<!--        <td class="tg-za14">Spotlight Presentation</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">12:30:00 PM</td>-->
+<!--        <td class="tg-jkyp">13:30:00 PM</td>-->
+<!--        <td class="tg-za14">Lunch Break</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">11:23:00 AM</td>-->
+<!--        <td class="tg-jkyp">11:31:00 AM</td>-->
+<!--        <td class="tg-za14">Challenge Winner Presentation (Fattonny)</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">11:31:00 AM</td>-->
+<!--        <td class="tg-jkyp">1:00:00 PM</td>-->
+<!--        <td class="tg-za14">Lunch Break</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">1:00:00 PM</td>-->
+<!--        <td class="tg-jkyp">1:10:00 PM</td>-->
+<!--        <td class="tg-za14">Contributed Talk (Sim-to-Lab-to-Real: Safe RL with Shielding and Generalization-->
+<!--          Guarantees)-->
+<!--        </td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">1:10:00 PM</td>-->
+<!--        <td class="tg-jkyp">1:40:00 PM</td>-->
+<!--        <td class="tg-za14">Invited Talk (Shuran Song): Iterative Residual Policy for Generalizable Dynamic Manipulation-->
+<!--          of Deformable Objects&nbsp;&nbsp;-->
+<!--        </td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">1:40:00 PM</td>-->
+<!--        <td class="tg-jkyp">2:10:00 PM</td>-->
+<!--        <td class="tg-za14">Invited Talk (Nadia Figueroa): Towards Safe and Efficient Learning and Control for Physical-->
+<!--          Human Robot Interaction-->
+<!--        </td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">2:10:00 PM</td>-->
+<!--        <td class="tg-jkyp">2:18:00 PM</td>-->
+<!--        <td class="tg-za14">Challenge Winner Presentation (EPIC lab)</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">2:18:00 PM</td>-->
+<!--        <td class="tg-jkyp">2:30:00 PM</td>-->
+<!--        <td class="tg-za14">Break</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">2:30:00 PM</td>-->
+<!--        <td class="tg-jkyp">2:40:00 PM</td>-->
+<!--        <td class="tg-za14">Contributed Talk (Know Thyself: Transferable Visual Control Policies Through-->
+<!--          Robot-Awareness)-->
+<!--        </td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">2:40:00 PM</td>-->
+<!--        <td class="tg-jkyp">3:10:00 PM</td>-->
+<!--        <td class="tg-za14">Invited Talk (Mrinal Kalakrishnan): Robot Learning &amp; Generalization in the Real World-->
+<!--        </td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">3:10:00 PM</td>-->
+<!--        <td class="tg-jkyp">3:40:00 PM</td>-->
+<!--        <td class="tg-za14">Invited Talk (Xiaolong Wang): Generalizing Dexterous Manipulation by Learning from Humans-->
+<!--        </td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">3:40:00 PM</td>-->
+<!--        <td class="tg-jkyp">3:48:00 PM</td>-->
+<!--        <td class="tg-za14">Challenge Winner Presentation (Silver-Bullet-3D)</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">3:48:00 PM</td>-->
+<!--        <td class="tg-jkyp">3:50:00 PM</td>-->
+<!--        <td class="tg-za14">Break</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">3:50:00 PM</td>-->
+<!--        <td class="tg-jkyp">4:45:00 PM</td>-->
+<!--        <td class="tg-za14"><a href="https://app.gather.town/app/Wfl5hBvVzs7ELFNS/gplpw-poster-room">Poster Session-->
+<!--          2</a></td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">4:45:00 PM</td>-->
+<!--        <td class="tg-jkyp">5:30:00 PM</td>-->
+<!--        <td class="tg-za14">Challenge Award Ceremony</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td class="tg-jkyp">5:30:00 PM</td>-->
+<!--        <td class="tg-jkyp">5:35:00 PM</td>-->
+<!--        <td class="tg-za14">Closing Remarks</td>-->
+<!--      </tr>-->
+<!--      </tbody>-->
+<!--    </table>-->
+<!--    <ul>-->
+<!--    </ul>-->
+<!--  </div>-->
+
+  <div class="section" id="call">
+    <h2>Call for Papers</h2>
+    <p>
+      We invite submission to the Ingredients of Dexterous Manipulation workshop, hosted at ICRA 2024.
+    </p>
+    <h3>Paper topics</h3>
+    <p>
+      A non-exhaustive list of relevant topics:
+    </p>
+
+    <p>In this workshop, we aim to bring together machine learning and robotics researchers who
+      work at the intersection of these fields.
+      We invite researchers to submit work in the following or related areas (non-exhaustive list):</p>
+    <ul>
+      <li><strong>Planning and Control in Dexterous Manipulation:</strong></li>
+      <ul>
+        <li>What methods can be used to model the contact between a dexterous hand and an object to aid in control and
+          planning?
+        </li>
+        <li>What strategies can be used to manage high DoF systems with control methods?
+        </li>
+      </ul>
+      <li><strong>Designing Hardware for Dexterous Manipulation:</strong></li>
+      <ul>
+        <li>Is it possible to construct a cost-effective manipulator for dexterous manipulation?
+        </li>
+        <li>Does the soft hand model contribute to better manipulation tasks, and how can it be modeled?
+        </li>
+      </ul>
+      <li><strong>Collecting Dexterous Manipulation Data:</strong></li>
+      <ul>
+        <li>Can we collect general-purpose human hand data for dexterous manipulation using any professional equipment?
+          What differences exist between human and robot hand data?
+        </li>
+        <li>What improvements can be made to current data collection methods, like teleoperation, to enable large-scale
+          data gathering?
+        </li>
+      </ul>
+      <li><strong>Tactile Sensing for Manipulation:</strong></li>
+      <ul>
+        <li>How can tactile data aid robots in better task execution and environmental perception?
+        </li>
+        <li>What type of tactile information is most effective for dexterous robot hands, and can it make up for visual
+          perception limitations?
+        </li>
+      </ul>
+      <li><strong>Learning for Dexterous Manipulation:</strong></li>
+      <ul>
+        <li>Can we expect a comprehensive and generalized model for most everyday dexterous manipulation tasks, or will
+          each task require its own specialized model?
+        </li>
+        <li>How can learning-based policies manage dynamic tasks that demand high-frequency control and detailed dynamic
+          models?
+        </li>
+      </ul>
+      <li>Any additional related topics not already covered in the above list 😄</li>
+    </ul>
+    <p></p>
+    <h3>Submission Guidelines (TBD)</h3>
+    <p>
+    </p>
+    <p></p>
+
+    <h3>Timeline (TBD)</h3>
+  </div>
+
+
+  <div class="section" id="postersessions">
+    <h2>Poster Sessions (TBD)</h2>
+  </div>
+
+  <div class="section" id="organizers">
+    <h2>Organizers</h2>
+    <div class="people">
+      <a href="https://taochenshh.github.io/">
+        <img src="images/organizers/tao_profile.jpg">
+        <div>Tao Chen</div>
+        <div class="aff">MIT</div>
+      </a>
+      <a href="https://haozhi.io/">
+        <img src="images/organizers/haozhi.jpg">
+        <div>Haozhi Qi</div>
+        <div class="aff">UC Berkeley</div>
+      </a>
+      <a href="https://yzqin.github.io/">
+        <img src="images/organizers/qyz_circle.png">
+        <div>Yuzhe Qin</div>
+        <div class="aff">UC San Diego</div>
+      </a>
+      <a href="https://xiaolonw.github.io/">
+        <img src="images/organizers/xiaolong_wang.jpg">
+        <div>Xiaolong Wang</div>
+        <div class="aff">UC San Diego</div>
+      </a>
+      <a href="https://me.berkeley.edu/people/hannah-stuart/">
+        <img src="images/organizers/Stuart-H.jpg">
+        <div>Hannah Stuart</div>
+        <div class="aff">UC Berkeley</div>
+      </a>
+      <a href="https://asmorgan24.github.io/">
+        <img src="images/organizers/Morgan.jpeg">
+        <div>Andrew Morgan</div>
+        <div class="aff">Boston Dynamics <br> AI Institute</div>
+      </a>
+      <a href="http://people.csail.mit.edu/pulkitag/">
+        <img src="images/organizers/pulkit.jpg">
+        <div>Pulkit Agrawal</div>
+        <div class="aff">MIT</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="section" id="sponsor">
+    <h2>Sponsor</h2>
+    We express our deep gratitude towards the <a
+      href="https://www.ieee-ras.org/robotic-hands-grasping-and-manipulation">
+    Technical Committee for Robotic Hands, Grasping, and Manipulation </a>
+    for their generous support and sponsoring the award ceremony of this workshop!
+  </div>
+
+  <div class="section" id="contact">
+    <h2>Contact</h2>
+    <div>For questions and comments, please <a href="mailto:taochen@mit.edu">contact us.</a>
+    </div>
+  </div>
+
+</div>
+<!--<p style="text-align:center;font-size:small;">-->
+<!--  Website template from <a href="https://ai-workshops.github.io/generalizable-policy-learning-in-the-physical-world/">Tongzhou-->
+<!--  Mu</a>-->
+<!--</p>-->
+
+<div class="foot">
+  © ICRA 2024 Ingredients of Dexterous Manipulation
+</div>
+
+
+</body>
+</html>
