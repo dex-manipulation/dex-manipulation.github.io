@@ -180,6 +180,11 @@ th {
     color: #444;
 }
 
+.people .tutorial {
+    font-size: 0.8em;
+    color: #000000;
+}
+
 .foot {
     background: #333;
     padding: 5px 10%;
