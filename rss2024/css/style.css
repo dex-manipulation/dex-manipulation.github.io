@@ -166,15 +166,15 @@ th {
 
 .people > * {
     display: block;
-    width: 130px;
+    width: 150px;
     margin: 10px;
     text-decoration: none;
     color: inherit;
 }
 
 .people img {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     object-fit: cover;
 }
