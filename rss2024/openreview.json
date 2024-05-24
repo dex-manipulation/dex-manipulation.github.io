@@ -1,0 +1,31 @@
+{
+  "track": {
+    "description": "Please see the venue website for more information about different tracks: https://dex-manipulation.github.io/rss2024/",
+    "order": 2,
+    "value": {
+      "param": {
+        "type": "string",
+        "enum": [
+          "Paper Submission Track",
+          "Demo Submission Track"
+        ],
+        "input": "radio"
+      }
+    }
+  },
+  "supplementary_material": {
+    "value": {
+      "param": {
+        "type": "file",
+        "extensions": [
+          "zip"
+        ],
+        "maxSize": 50,
+        "optional": true,
+        "deletable": true
+      }
+    },
+    "description": "All supplementary material must be self-contained and zipped into a single file. Supplementary material is **optional For the paper submission track**. For the demo submission track, you should upload a summary document as a `pdf` under the PDF field and upload your video demo as a `zip` file in this supplementary field. Supplementary material is **mandatory for the demo submission track**. The maximum file size is 100MB.",
+    "order": 7
+  }
+}
