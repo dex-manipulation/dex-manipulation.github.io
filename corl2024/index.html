@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script type="text/javascript"
+          src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Workshop on Learning Dexterous Manipulation: Design, Perception, Data Collection and Control</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="nav">
+  <div class="nav-container">
+    <a href="https://dex-manipulation.github.io/corl2024/index.html#intro">Introduction</a>
+    <a href="https://dex-manipulation.github.io/corl2024/index.html#speaker">Speakers</a>
+    <a href="https://dex-manipulation.github.io/corl2024/index.html#call">Call for Papers</a>
+    <a href="https://dex-manipulation.github.io/corl2024/index.html#schedule">Schedule</a>
+    <a href="https://dex-manipulation.github.io/corl2024/index.html#organizers">Organizers</a>
+    <a href="https://dex-manipulation.github.io/corl2024/index.html#contact">Contact</a>
+  </div>
+</div>
+
+<div class="title-container">
+  <div style="text-align: center;">
+    <h1>Learning Dexterous Manipulation: <br> Design, Perception, Data Collection, and Control</h1>
+    <div class="subtitle" style="color: #ccc; margin: 20px">
+      Tentative CoRL 2024 Workshop, November 9, 2024
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section" id="intro">
+    <h2>Introduction</h2>
+    <p> This workshop delves into the frontier of learning-based approaches for dexterous manipulation,
+      one of the most formidable challenges in robotics. It offers a comprehensive overview of state-of-the-art research
+      and developments in dexterous manipulator hardware design, planning and control techniques for dexterous manipulation,
+      data collection for dexterous hands, and sensing technologies, with a particular emphasis on tactile sensors. </p>
+    <p> Building upon the success of our <a href="https://learn-dex-hand.github.io/rss2023/" target="_blank">learning
+      dexterous manipulation workshop at RSS 2023</a> and <a href="https://dex-manipulation.github.io/rss2024/">dexterous
+      manipulation workshop at RSS 2024</a>, this workshop is tailored for researchers, engineers, and students
+      possessing a robust background or keen interest in machine learning, computer vision, robotics, and associated
+      disciplines. It serves as a platform for fostering discussions among preeminent academic and industrial experts.
+      Accepted papers will be showcased through poster sessions and contributed talks, equipping participants with
+      exposure to the most recent breakthroughs and avenues for collaboration, thereby charting the course for
+      forthcoming innovations in robotic learning. </p>
+
+  </div>
+
+
+  <div class="section" id="speakers">
+    <h2>Invited Speakers</h2>
+    <div class="people">
+      <a href="https://people.csail.mit.edu/pulkitag/">
+        <img src="https://people.csail.mit.edu/pulkitag/images/pulkit.jpg">
+        <div>Pulkit Agrawal</div>
+        <div class="aff">MIT</div>
+      </a>
+      <a href="https://people.epfl.ch/josie.hughes?lang=en">
+        <img src="https://people.epfl.ch/private/common/photos/links/323953.jpg?ts=1718315993">
+        <div>Josie Hughes</div>
+        <div class="aff">EPFL</div>
+      </a>
+      <a href="https://profiles.stanford.edu/c-karen-liu">
+        <img
+            src="https://profiles.stanford.edu/proxy/api/cap/profiles/211555/resources/profilephoto/350x350.1566448250851.jpg">
+        <div>Karen Liu</div>
+        <div class="aff">Stanford</div>
+      </a>
+      <a href="https://xiaolonw.github.io/">
+        <img src="https://xiaolonw.github.io/static/profile.jpg">
+        <div>Xiaolong Wang</div>
+        <div class="aff">UC San Diego</div>
+      </a>
+    </div>
+    <p> (<small><i>listed alphabetically</i></small>) </p>
+  </div>
+
+  <br>
+
+  <div class="section" id="schedule">
+    <h2>Workshop Schedule</h2>
+    <ul></ul>
+    <style type="text/css">
+        .tg .tg-u4qn {
+            background-color: #D9D9D9;
+            text-align: left;
+            vertical-align: bottom
+        }
+    </style>
+    <table>
+      <tr>
+        <th>Time (GMT+2, Germany Time Zone)</th>
+        <th>Event</th>
+      </tr>
+      <!--      <tr>-->
+      <!--        <td>08:45 - 08:50</td>-->
+      <!--        <td>Introduction and Opening Remark</td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>08:50 - 09:15</td>-->
+      <!--        <td>Invited Talk and Mini-Discussion 1: <b>Sammy Christen</b></td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>09:15 - 09:40</td>-->
+      <!--        <td>Invited Talk and Mini-Discussion 2: <b>Hanbyul Joo</b></td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>09:40 - 10:00</td>-->
+      <!--        <td>Spotlight Talks 1</td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>10:00 - 10:30</td>-->
+      <!--        <td>Coffee Break + Poster Session + Real Robot Demo Session</td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>10:30 - 10:55</td>-->
+      <!--        <td>Invited Talk and Mini-Discussion 3: <b>Russ Tedrake</b></td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>10:55 - 11:20</td>-->
+      <!--        <td>Invited Talk and Mini-Discussion 4: <b>He Wang</b></td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>11:20 - 11:45</td>-->
+      <!--        <td>Invited Talk and Mini-Discussion 5: <b>Robert Katzschmann</b></td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>11:45 - 12:10</td>-->
+      <!--        <td>Invited Talk and Mini-Discussion 6: <b>Kevin Doherty</b></td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>12:10 - 14:00</td>-->
+      <!--        <td>Lunch Break</td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>14:00 - 14:25</td>-->
+      <!--        <td>Invited Talk and Mini-Discussion 7: <b>Matei Ciocarlie</b></td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>14:25 - 14:50</td>-->
+      <!--        <td>Invited Talk and Mini-Discussion 8: <b>Tess Hellebrekers</b></td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>14:50 - 15:15</td>-->
+      <!--        <td>Invited Talk and Mini-Discussion 9: <b>Jitendra Malik</b></td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>15:15 - 15:30</td>-->
+      <!--        <td>Spotlight Talks 2</td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>15:30 - 16:00</td>-->
+      <!--        <td>Coffee Break + Poster Session + Real Robot Demo Session</td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>16:00 - 17:00</td>-->
+      <!--        <td>Panel Discussion</td>-->
+      <!--      </tr>-->
+      <!--      <tr>-->
+      <!--        <td>17:00 - 17:15</td>-->
+      <!--        <td>Closing Remark & Award Ceremony</td>-->
+      <!--      </tr>-->
+    </table>
+    <ul></ul>
+  </div>
+  <br>
+
+  <div class="section" id="call">
+    <h2>Call for Papers/Demos</h2>
+    <p>
+      In this workshop, our goal is to bring together researchers from various fields of robotics, such as control,
+      optimization, planning, perception, hardware, etc., who work on learning dexterous manipulation.
+    </p>
+
+    <!--    <p>-->
+    <!--      We are particularly excited to offer a platform for showcasing real-world robotic systems.-->
+    <!--      <b style="color: darkblue">Even without a formal paper, we encourage submissions of videos demonstrating your-->
+    <!--        robots in action. For those-->
+    <!--        able to attend in person, there will be opportunities to showcase your robots live at the workshop!</b>-->
+    <!--      We encourage-->
+    <!--      researchers to submit work in the following areas (the list is not exhaustive):-->
+    <!--    </p>-->
+
+    <ul>
+      <li>Leveraging imitation learning techniques to advance dexterous manipulation capabilities</li>
+      <li>Exploring reinforcement learning and sim2real approaches for precise control of dexterous
+        hands
+      </li>
+      <li>Developing efficient data collection systems to support dexterous manipulation research</li>
+      <li>Investigating planning strategies and algorithms for dexterous manipulation tasks</li>
+      <li>Integrating tactile sensing for enhanced manipulation and multi-modal learning</li>
+      <li>Applying learning methods to optimize robot hand design and sensor configurations</li>
+      <li>Showcasing innovative systems and applications that utilize learning for dexterous manipulation</li>
+      <li>Welcoming submissions on any additional topics related to learning-based dexterous manipulation not covered
+        above 😄
+      </li>
+    </ul>
+    <h3>Submission Guidelines</h3>
+    <p>
+      TBD
+    </p>
+    <!--    <ul>-->
+    <!--      <li><b style="color: darkblue">Submission Portal for Paper and Demo:</b> <a-->
+    <!--          href="https://openreview.net/group?id=roboticsfoundation.org/RSS/2024/Workshop/DM"-->
+    <!--          target="_blank">OpenReview</a>-->
+    <!--      </li>-->
+    <!--      <li><b style="color: darkblue">Paper Submission Guideline:</b></li>-->
+    <!--      <ul>-->
+    <!--        <li><b>Paper Length:</b>-->
+    <!--          Submissions could be <b>4-page</b> short papers, excluding references, acknowledgements, and appendices.-->
+    <!--        </li>-->
+    <!--        <li><b>Format:</b>-->
+    <!--          <ul>-->
+    <!--            <li>The format requirement follows the RSS 2024 main conference. Paper template: <a-->
+    <!--                href="https://roboticsconference.org/docs/paper-template-latex.tar.gz" target="_blank">LaTeX</a> and <a-->
+    <!--                href="https://roboticsconference.org/docs/paper-template-word.zip" target="_blank">Word</a></li>-->
+    <!--            <li>Please include the references and appendix in the same PDF as the main paper and submit optional videos-->
+    <!--              as zip file in supplementary.-->
+    <!--            </li>-->
+    <!--            <li>The maximum file size is 100MB. More information on-->
+    <!--              format can be found <a-->
+    <!--                  href="https://roboticsconference.org/information/authorinfo/#paper-and-demo-format"-->
+    <!--                  target="_blank">here</a>-->
+    <!--            </li>-->
+    <!--          </ul>-->
+    <!--        </li>-->
+    <!--        <li><b>Dual Submission for Other Conference:</b>-->
+    <!--          <ul>-->
+    <!--            <li>Papers to be submitted or in preparation for submission to other major venues (including CoRL 2024) in-->
+    <!--              the-->
+    <!--              field are allowed.-->
+    <!--            </li>-->
+    <!--            <li>We also welcome published works as long as explicitly stated at the time of submission.</li>-->
+    <!--          </ul>-->
+    <!--        </li>-->
+    <!--      </ul>-->
+
+    <!--      <li><b style="color: darkblue">Demo Submission Guideline:</b></li>-->
+    <!--      <ul>-->
+    <!--        <li><b>Summary Document:</b>-->
+    <!--          Please upload a summary document as a pdf. There is no page and format requirement for this pdf.-->
+    <!--        </li>-->
+    <!--        <li><b>Demo Video:</b>-->
+    <!--          Please upload video demos as a single zip under the supplementary material field in OpenReview.-->
+    <!--        </li>-->
+    <!--      </ul>-->
+    <!--      <li><b style="color: darkblue">Visibility:</b> Submissions and reviews will not be public. Only accepted papers-->
+    <!--        will be made public.-->
+    <!--      </li>-->
+    <!--    </ul>-->
+
+    <!--    <h3>Timeline</h3>-->
+    <!--    <ul>-->
+    <!--      <li>Submission Port Open: <b>Monday, April 15, 2024</b></li>-->
+    <!--      <li>Submission Deadline:-->
+    <!--        <del>Monday, June 10, 2024</del>-->
+    <!--        &nbsp <b style="color: red;">Friday, June 14, 2024</b></li>-->
+    <!--      <li>Notification: <b>Monday, July 1, 2024</b></li>-->
+    <!--      <li>Workshop Date: <b>Monday, July 15, 2024</b></li>-->
+    <!--    </ul>-->
+  </div>
+
+  <br>
+  <!--  <div class="section" id="postersessions">-->
+  <!--    <h2>Poster Sessions (TBD after paper acceptance notification)</h2>-->
+  <!--  </div>-->
+
+  <div class="section" id="organizers">
+    <h2>Organizers</h2>
+    <div class="people">
+      <a href="https://haozhi.io/">
+        <img src="https://haozhi.io/profile.jpg">
+        <div>Haozhi Qi</div>
+        <div class="aff">UC Berkeley</div>
+      </a>
+      <a href="https://chenwangjeremy.net/">
+        <img src="https://chenwangjeremy.net/assets/img/profile.jpeg">
+        <div>Chen Wang</div>
+        <div class="aff">Stanford</div>
+      </a>
+      <a href="https://taochenshh.github.io/">
+        <img src="https://taochenshh.github.io/media/tao_profile.jpg">
+        <div>Tao Chen</div>
+        <div class="aff">MIT</div>
+      </a>
+      <a href="https://contactrika.github.io/">
+        <img src="https://contactrika.github.io/img/rika_photo_one.jpg">
+        <div>Rika Antonova</div>
+        <div class="aff">University of Cambridge</div>
+      </a>
+      <a href="https://yzqin.github.io/">
+        <img src="https://yzqin.github.io/file/qyz_circle.png">
+        <div>Yuzhe Qin</div>
+        <div class="aff">UC San Diego</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>Contact</h2>
+    <div>For questions and comments, please <a href="mailto:taochen@mit.edu">contact us.</a>
+    </div>
+  </div>
+
+  <div class="foot">
+    © CoRL 2024 Learning Dexterous Manipulation Workshop
+  </div>
+</div>
+
+
+</body>
+
+</html>
