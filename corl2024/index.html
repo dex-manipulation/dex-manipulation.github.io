@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-  <title>Workshop on Learning Dexterous Manipulation: Design, Perception, Data Collection and Control</title>
+  <title>Learning Robot Fine and Dexterous Manipulation: Perception and Control</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -27,9 +27,9 @@
 
 <div class="title-container">
   <div style="text-align: center;">
-    <h1>Learning Dexterous Manipulation: <br> Design, Perception, Data Collection, and Control</h1>
+    <h1>Learning Robot Fine and Dexterous Manipulation: <br> Perception and Control </h1>
     <div class="subtitle" style="color: #ccc; margin: 20px">
-      Tentative CoRL 2024 Workshop, November 9, 2024
+      CoRL 2024 Workshop, November 9, 2024
     </div>
   </div>
 </div>
@@ -37,18 +37,47 @@
 <div class="container">
   <div class="section" id="intro">
     <h2>Introduction</h2>
-    <p> This workshop delves into the frontier of learning-based approaches for dexterous manipulation,
-      one of the most formidable challenges in robotics. It offers a comprehensive overview of state-of-the-art research
-      and developments in dexterous manipulator hardware design, planning and control techniques for dexterous manipulation,
-      data collection for dexterous hands, and sensing technologies, with a particular emphasis on tactile sensors. </p>
-    <p> Building upon the success of our <a href="https://learn-dex-hand.github.io/rss2023/" target="_blank">learning
-      dexterous manipulation workshop at RSS 2023</a> and <a href="https://dex-manipulation.github.io/rss2024/">dexterous
-      manipulation workshop at RSS 2024</a>, this workshop is tailored for researchers, engineers, and students
-      possessing a robust background or keen interest in machine learning, computer vision, robotics, and associated
-      disciplines. It serves as a platform for fostering discussions among preeminent academic and industrial experts.
-      Accepted papers will be showcased through poster sessions and contributed talks, equipping participants with
-      exposure to the most recent breakthroughs and avenues for collaboration, thereby charting the course for
-      forthcoming innovations in robotic learning. </p>
+
+    <p> Fine manipulation involves making precise movements with robotic hands and fingers to handle small objects or perform intricate tasks, such as threading a needle. Dexterous manipulation goes further, requiring highly skilled, accurate, and versatile manipulation of objects through complex interactions among multiple fingers and joints. The ability to achieve fine and dexterous manipulation with high speed, accuracy, and dexterity is becoming increasingly important in robotics research. However, it also poses many challenges, such as frequent making and breaking of contact, real-time feedback control with high-dimensional observations, high-dimensional control spaces, and objects being in unstable configurations. Traditional methods rely on precise robot and environment models but often struggle with real-world uncertainties and lack generalizability. Despite decades of research, most demonstrations of dexterous manipulation still rely heavily on teleoperation. Achieving robust and generalizable dexterous manipulation requires advancements in perception integration, data collection, and control. Advances in robot learning, including machine learning and transfer learning, offer promising pathways to enhance robotic performance in fine and dexterous manipulation tasks. This event seeks to convene researchers from diverse disciplines to share insights on pushing this critical boundary. </p>
+
+    <p> This workshop aims to bring together junior and senior researchers to discuss the latest advancements, challenges, and future directions in learning-based approaches for robot fine manipulation skills, one of the most challenging areas in robotics. We will delve into the current state-of-the-art across relevant areas, including the hardware and mechanical design of dexterous manipulators, generalizable skill learning techniques, and sensing modalities such as tactile sensors and vision systems. Researchers will have opportunities to present posters, give contributed talks, and engage in thought-provoking discussions.
+    </p>
+
+    <p>
+      We will explore the following focused research questions:
+    </p>
+
+    <b> Visual Perception </b>
+    <ul>
+      <li> In the context of dexterous manipulation, how can we overcome challenges related to occlusions between objects and robot hands?
+      <li> What are the strategies for generalizing manipulation policies to outdoor or unstructured environments, considering variables such as lighting changes and the need to process extensive information?
+    </ul>
+
+    <b> Tactile Perception </b>
+    <ul>
+      <li> How can tactile feedback be utilized in dexterous manipulation?
+      <li> What types of tactile sensors and data are most beneficial for these tasks, and how can they complement or substitute visual feedback?
+    </ul>
+
+    <b> Robot Skill Learning </b>
+    <ul>
+<li> Foundation vs. Specialized Models: Is the future of dexterous manipulation in developing a foundation model for general tasks, or will specialized models for specific tasks prevail?
+<li> Dynamic Tasks: How can learning-based approaches effectively manage dynamic manipulation that necessitates precise control and accurate dynamics modeling?
+<li> Generalization of Human Hand Data: Can we standardize the collection of human hand data for dexterous manipulation using expert-grade equipment, and what strategies can bridge the data gap between human and robotic manipulation capabilities?
+<li> Enhancing Data Collection Methods: What improvements can be made to teleoperation and other data collection methods to enable large-scale acquisition of manipulation data?
+<li> Reducing Reward Engineering for Reinforcement Learning: Tuning reward functions is non-trivial for new tasks. How can we reduce the engineering effort in reward shaping? How can we scale up reinforcement learning pipelines to solve hundreds of different tasks?
+</ul>
+
+    <b> Learning Fine and Dexterous Manipulation Skills </b>
+      <ul>
+        <li>What are the main challenges in learning fine and dexterous manipulation skills compared to other robot skills?
+        <li>Is end-to-end learning effective for acquiring these skills?
+        <li>What challenges arise in coordinating surplus degrees of freedom during in-hand manipulation, and what are the requirements for learning techniques to address these challenges effectively?
+        <li>How can various applications, such as prosthetics, benefit from emerging algorithms?
+        <li>What challenges and prerequisites do touch processing and tactile sensing entail?
+        <li>How can we establish robust benchmarks and frameworks for systematically evaluating and comparing the effectiveness of various learning techniques?
+      </ul>
+    <p>The expected attendees for these discussions and talks are researchers from academia and industry specializing in robotics and machine learning, particularly those interested in applying learning approaches to achieve fine and dexterous manipulation in robots.</p>
 
   </div>
 
@@ -61,20 +90,10 @@
         <div>Pulkit Agrawal</div>
         <div class="aff">MIT</div>
       </a>
-      <a href="https://people.epfl.ch/aude.billard">
-        <img src="images/aude.jpeg">
-        <div>Aude Billard (tentative)</div>
-        <div class="aff">EPFL</div>
-      </a>
       <a href="https://aidx-lab.org/">
         <img src="https://aidx-lab.org/assets/imgs/group/baeuml-berthold.jpeg">
         <div>Berthold Bäuml</div>
         <div class="aff">TUM</div>
-      </a>
-      <a href="https://people.epfl.ch/josie.hughes?lang=en">
-        <img src="https://actu.epfl.ch/public/upload/fckeditorimage/96/4f/aec3adba.jpg">
-        <div>Josie Hughes</div>
-        <div class="aff">EPFL</div>
       </a>
       <a href="https://profiles.stanford.edu/c-karen-liu">
         <img
@@ -92,6 +111,49 @@
         <div>Li Yi</div>
         <div class="aff">THU</div>
       </a>
+
+      <a href="https://renaud-detry.net/">
+        <img src="https://renaud-detry.net/assets/img/detry-480.webp">
+        <div>Renaud Detry</div>
+        <div class="aff">KU Leuven</div>
+      </a>
+
+      <a href="https://www.tu.berlin/en/robotics/about-rbo/prof-dr-oliver-brock">
+        <img src="https://soma-summerschool.dlr.de/wp-content/uploads/2016/10/Oliver_Brock.jpg">
+        <div>Oliver Brock</div>
+        <div class="aff">TU Berlin</div>
+      </a>
+
+      <a href="https://faculty.utah.edu/u6002596-Tucker_Hermans/hm/index.hml">
+        <img src="https://faculty.utah.edu/bytes/image.hml?id=u6002596&fullsize=true">
+        <div>Tucker Hermans</div>
+        <div class="aff">University of Utah</div>
+      </a>
+
+      <a href="http://people.isir.upmc.fr/doncieux">
+        <img src="https://www.isir.upmc.fr/wp-content/uploads/2021/02/photo_SD3.jpg">
+        <div>Stéphane Doncieux</div>
+        <div class="aff">ISIR</div>
+      </a>
+
+      <a href="https://www.robertocalandra.com/about/">
+        <img src="https://pbs.twimg.com/profile_images/1641101263164022786/Sr57Toqs_400x400.jpg">
+        <div>Roberto Calandra</div>
+        <div class="aff">ISIR</div>
+      </a>
+
+      <a href="https://animesh.garg.tech/">
+        <img src="https://animesh.garg.tech/assets/img/animesh-sept19-sq.jpg">
+        <div>Animesh Garg</div>
+        <div class="aff">Georgia Tech</div>
+      </a>
+
+      <a href="https://jpsilverio.github.io/">
+        <img src="https://jpsilverio.github.io/images/JoaoSilverio.jpg">
+        <div>João Silvério</div>
+        <div class="aff"> German Aerospace Center (DLR)</div>
+      </a>
+
     </div>
     <p> (<small><i>listed alphabetically</i></small>) </p>
   </div>
@@ -189,8 +251,11 @@
   <div class="section" id="call">
     <h2>Call for Papers/Demos</h2>
     <p>
-      In this workshop, our goal is to bring together researchers from various fields of robotics, such as control,
-      optimization, planning, perception, hardware, etc., who work on learning dexterous manipulation.
+      We invite you to submit two-page, double-column abstracts (including figures, tables, and references). Please provide the required information and upload your PDF abstract using the form below.
+    </p>
+
+    <p>
+      We recommend submitting a 2-page abstract in PDF format, following the CoRL template (two columns). All submissions will undergo a peer-review process and will be evaluated based on their relevance and contribution to the workshop’s topics. Accepted submissions will be featured at the workshop through Poster Spotlight Talks (2-minute presentations) and Poster Sessions. They will also be published on the workshop’s websites, along with an optional 2-minute video summary.
     </p>
 
     <!--    <p>-->
@@ -203,18 +268,17 @@
     <!--    </p>-->
 
     <ul>
-      <li>Leveraging imitation learning techniques to advance dexterous manipulation capabilities</li>
-      <li>Exploring reinforcement learning and sim2real approaches for precise control of dexterous
-        hands
-      </li>
-      <li>Developing efficient data collection systems to support dexterous manipulation research</li>
-      <li>Investigating planning strategies and algorithms for dexterous manipulation tasks</li>
-      <li>Integrating tactile sensing for enhanced manipulation and multi-modal learning</li>
-      <li>Applying learning methods to optimize robot hand design and sensor configurations</li>
-      <li>Showcasing innovative systems and applications that utilize learning for dexterous manipulation</li>
+      <li>In-hand manipulation, dexterous manipulation, fine manipulation
+      <li>Learning robot fine-manipulation skills
+      <li>Reinforcement learning in robotic fine-manipulation
+      <li>Transfer learning in robotic fine-manipulation
+      <li>Imitation learning/Learning from demonstration of fine-manipulation skills
+      <li>Data collection for fine and/or dexterous manipulation
+      <li>Simulation for fine and/or dexterous manipulation (sim2real approaches)
+      <li>Investigating planning strategies and algorithms for dexterous manipulation tasks
+      <li>Integrating tactile sensing for enhanced manipulation and multi-modal learning
       <li>Welcoming submissions on any additional topics related to learning-based dexterous manipulation not covered
         above 😄
-      </li>
     </ul>
     <h3>Submission Guidelines</h3>
     <p>
@@ -270,15 +334,12 @@
     <!--      </li>-->
     <!--    </ul>-->
 
-    <!--    <h3>Timeline</h3>-->
-    <!--    <ul>-->
-    <!--      <li>Submission Port Open: <b>Monday, April 15, 2024</b></li>-->
-    <!--      <li>Submission Deadline:-->
-    <!--        <del>Monday, June 10, 2024</del>-->
-    <!--        &nbsp <b style="color: red;">Friday, June 14, 2024</b></li>-->
-    <!--      <li>Notification: <b>Monday, July 1, 2024</b></li>-->
-    <!--      <li>Workshop Date: <b>Monday, July 15, 2024</b></li>-->
-    <!--    </ul>-->
+        <h3>Timeline</h3>
+        <ul>
+          <li>Submission Deadline: <b> October 6, 2024 </b></li>
+          <li>Notification: <b>October 14, 2024</b></li>
+          <li>Workshop Date: <b>November 9, 2024</b></li>
+        </ul>
   </div>
 
   <br>
@@ -331,6 +392,8 @@
       </a>
     </div>
   </div>
+
+  (This workshop is the result of combining two similar workshop proposals that were both accepted to be held at CoRL 2024. <a href="https://www.epfl.ch/labs/lasa/workshop-fine-manipulation/">Link</a> to the other workshop webpage)
 
   <div class="section" id="contact">
     <h2>Contact</h2>
