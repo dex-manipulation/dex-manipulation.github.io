@@ -201,3 +201,19 @@ th {
     -webkit-columns: 3;
     -moz-columns: 3;
 }
+
+.people-group {
+  padding: 10px;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.round-rectangle {
+  border: 2px solid #000;
+  border-radius: 15px;
+}
+
+.rectangle {
+  border: 2px solid #000;
+  border-radius: 0;
+}
