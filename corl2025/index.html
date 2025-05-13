@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script type="text/javascript"
+          src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Dexterous Manipulation: Learning and Control with Diverse Modalities</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="nav">
+  <div class="nav-container">
+    <a href="https://dex-manipulation.github.io/corl2024/index.html#intro">Introduction</a>
+    <a href="https://dex-manipulation.github.io/corl2024/index.html#speaker">Speakers</a>
+    <a href="https://dex-manipulation.github.io/corl2024/index.html#call">Call for Papers</a>
+    <a href="https://dex-manipulation.github.io/corl2024/index.html#schedule">Schedule</a>
+    <a href="https://dex-manipulation.github.io/corl2024/index.html#organizers">Organizers</a>
+    <a href="https://dex-manipulation.github.io/corl2024/index.html#contact">Contact</a>
+  </div>
+</div>
+
+<div class="title-container">
+  <div style="text-align: center;">
+    <h1>Dexterous Manipulation: <br> Learning and Control with Diverse Modalities</h1>
+    <div class="subtitle" style="color: #ccc; margin: 20px">
+      <!-- CoRL 2024 Workshop, November 9, 2024 -->
+      CoRL 2025 Workshop PROPOSAL
+    </div>
+     <div class="subtitle" style="color: #ccc; margin: 20px">
+       <!-- <a href="https://www.youtube.com/watch?v=rtHeKZJEzSg"> [Workshop Video Recording] </a> -->
+     </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section" id="intro">
+    <h2>Introduction</h2>
+
+    <p> Fine manipulation involves making precise movements with robotic hands and fingers to handle small objects or perform intricate tasks, such as threading a needle. Dexterous manipulation goes further, requiring highly skilled, accurate, and versatile manipulation of objects through complex interactions among multiple fingers and joints. The ability to achieve fine and dexterous manipulation with high speed, accuracy, and dexterity is becoming increasingly important in robotics research. However, it also poses many challenges, such as frequent making and breaking of contact, real-time feedback control with high-dimensional observations, high-dimensional control spaces, and objects being in unstable configurations. Traditional methods rely on precise robot and environment models but often struggle with real-world uncertainties and lack generalizability. Despite decades of research, most demonstrations of dexterous manipulation still rely heavily on teleoperation. Achieving robust and generalizable dexterous manipulation requires advancements in perception integration, data collection, and control. Advances in robot learning, including machine learning and transfer learning, offer promising pathways to enhance robotic performance in fine and dexterous manipulation tasks. This event seeks to convene researchers from diverse disciplines to share insights on pushing this critical boundary. </p>
+
+    <p> This workshop aims to bring together junior and senior researchers to discuss the latest advancements, challenges, and future directions in learning-based approaches for robot fine manipulation skills, one of the most challenging areas in robotics. We will delve into the current state-of-the-art across relevant areas, including the hardware and mechanical design of dexterous manipulators, generalizable skill learning techniques, and sensing modalities such as tactile sensors and vision systems. Researchers will have opportunities to present posters, give contributed talks, and engage in thought-provoking discussions.
+    </p>
+
+    <p>
+      We will explore the following focused research questions:
+    </p>
+    
+    <b>Synergy between Learning and Control</b>
+    <ul>
+      <li>What’s the right balance between model-free learning and control-theoretic methods? Should we pursue hybrid approaches that combine the strengths of both?</li>
+      <li>How can we reduce reliance on simulation while improving the transferability of policies to the real world?</li>
+    </ul>
+    
+    <b>Perception: Seeing & Feeling the World</b>
+    <ul>
+      <li>How can we extract meaningful visual information in the presence of occlusions caused by hands or tools?</li>
+      <li>What strategies ensure robust policy generalization across varied lighting, cluttered environments, and unseen objects?</li>
+      <li>Can tactile sensing match or surpass visual input in certain tasks? What types of tactile sensors are most effective, and how can we maximize their integration into manipulation pipelines?</li>
+    </ul>
+    
+    <b>Hardware: Redesigning Dexterous Hands</b>
+    <ul>
+      <li>What innovations can lead to more compact, efficient, and capable robotic hands?</li>
+      <li>How can we enhance durability and reduce the maintenance costs of dexterous hardware?</li>
+    </ul>
+    
+    <b>Scaling Robot Skill Learning</b>
+    <ul>
+      <li>Will a single foundation model for dexterous manipulation emerge, or will specialized models for specific tasks dominate?</li>
+      <li>How can we develop policies that handle dynamic, forceful, or high-speed interactions effectively?</li>
+      <li>Can we standardize the collection and use of human hand data to train and evaluate robotic manipulation skills?</li>
+    </ul>
+    
+    <b>Reinforcement Learning and Demonstration Data</b>
+    <ul>
+      <li>How can we build generalizable policies from limited or biased demonstration datasets?</li>
+      <li>What are the key strategies for scaling reinforcement learning pipelines to handle hundreds of tasks without requiring extensive manual tuning?</li>
+    </ul>
+  </div>
+
+  <div class="section" id="speakers">
+    <h2>Invited Speakers</h2>
+    <div class="people">
+      <a href="https://contactrika.github.io/">
+        <img src="images/rika_photo_one.jpg">
+        <div>Rika Antonova</div>
+        <div class="aff">University of Cambridge</div>
+      </a>
+      <a href="https://hughw19.github.io/">
+        <img src="https://hughw19.github.io/assets/photo1.png">
+        <div>He Wang</div>
+        <div class="aff">Peking University</div>
+      </a>
+      <a href="https://people.eecs.berkeley.edu/~malik/">
+        <img src="https://people.eecs.berkeley.edu/~malik/malik-color1.jpg">
+        <div>Jitendra Malik</div>
+        <div class="aff">UC Berkeley</div>
+      </a>   
+      <a href="https://beomjoonkim.github.io/">
+        <img src="images/beomjoon.jpg">
+        <div>Beomjoon Kim</div>
+        <div class="aff">KAIST</div>
+      </a>
+      <a href="https://suddhu.github.io/">
+        <img src="https://suddhu.github.io/misc/suddhu-headshot.jpg">
+        <div>Sudharshan Suresh        </div>
+        <div class="aff">Boston Dynamics</div>
+      </a>
+      <a href="https://lepora.com/">
+        <img src="images/lepora.jfif">
+        <div>Nathan Lepora</div>
+        <div class="aff">University of Bristol</div>
+      </a>
+    </div>
+    
+    <!-- <p> (<small><i>listed alphabetically</i></small>) </p> -->
+  </div>
+
+  <br>
+
+
+  <div class="section" id="spotlight">
+
+</div>
+
+
+  <div class="section" id="call">
+    <h2>Call for Papers/Demos</h2>
+
+    <p>
+      In this workshop, our goal is to bring together researchers from various fields of robotics,
+      such as control, optimization, learning, planning, sensing, hardware, etc., who work on dexterous manipulation.
+      We encourage researchers to submit work in the following areas (the list is not exhaustive):
+    </p>
+
+    <!--    <p>-->
+    <!--      We are particularly excited to offer a platform for showcasing real-world robotic systems.-->
+    <!--      <b style="color: darkblue">Even without a formal paper, we encourage submissions of videos demonstrating your-->
+    <!--        robots in action. For those-->
+    <!--        able to attend in person, there will be opportunities to showcase your robots live at the workshop!</b>-->
+    <!--      We encourage-->
+    <!--      researchers to submit work in the following areas (the list is not exhaustive):-->
+    <!--    </p>-->
+
+    <ul>
+      <li>In-hand manipulation, dexterous manipulation, fine manipulation
+      <li>Learning robot fine-manipulation skills
+      <li>Reinforcement learning in robotic fine-manipulation
+      <li>Transfer learning in robotic fine-manipulation
+      <li>Imitation learning/Learning from demonstration of fine-manipulation skills
+      <li>Data collection for fine and/or dexterous manipulation
+      <li>Simulation for fine and/or dexterous manipulation (sim2real approaches)
+      <li>Investigating planning strategies and algorithms for dexterous manipulation tasks
+      <li>Integrating tactile sensing for enhanced manipulation and multi-modal learning
+      <li>Welcoming submissions on any additional topics related to learning-based dexterous manipulation not covered
+        above 😄
+    </ul>
+    <h3>Submission Guidelines</h3>
+        <ul>
+          <li><b style="color: darkblue">Submission Portal for Paper and Demo:</b> <a
+              href="https://openreview.net/"
+              target="_blank">OpenReview</a>
+          </li>
+          <li><b style="color: darkblue">Paper Submission Guideline:</b></li>
+          <ul>
+            <li><b>Paper Length:</b>
+              Submissions should be <b>4-page</b> maximum short papers, excluding references, acknowledgements, and appendices.
+            </li>
+            <li><b>Format:</b>
+              <ul>
+                <li>The format requirement follows the CoRL 2024 main conference. Paper template: <a
+                        href="https://drive.google.com/file/d/1mPoPyHJWAfLlgAIEhWKov7Crywsz9c1M/view?usp=sharing" target="_blank"> Link</a>. Please make sure your submission is anonymous.
+                <li>Please include the references and appendix in the same PDF as the main paper and submit optional videos
+                  as zip file in supplementary.
+                </li>
+                <li>The maximum file size is 100MB. More information on
+                  format can be found <a
+                      href="https://www.corl.org/contributions/instruction-for-authors"
+                      target="_blank">here</a>.
+                </li>
+              </ul>
+            </li>
+            <li>
+            <b> Review Process:</b>
+              <ul>
+                <li>All submissions will undergo a peer-review process and will be evaluated based on their relevance and contribution to the workshop’s topics.
+                <li>Accepted submissions will be featured at the workshop through Poster Spotlight Talks (1.5-minute presentations) and Poster Sessions.
+                <li>They will also be published on the workshop’s websites, along with an optional 1.5-minute video summary.
+              </ul>
+            </li>
+            <li><b>Dual Submission for Other Conference:</b>
+              <ul>
+                <li>Papers to be submitted or in preparation for submission to other major venues in the
+                  field are allowed.
+                </li>
+                <li>We also welcome published works as long as explicitly stated at the time of submission. </li>
+                <li>Note: CoRL 2025 discourages full papers to also be submitted as Workshop Contributions</li>
+              </ul>
+            </li>
+          </ul>
+
+          <li><b style="color: darkblue">Visibility:</b> Submissions and reviews will not be public. Only accepted papers
+            will be made public.
+          </li>
+        </ul>
+
+        <h3>Timeline</h3>
+        TBD
+        <!-- <ul>
+          <li>Submission Deadline: <b> October 6, 2024 </b></li>
+          <li>Notification: <b>October 14, 2024</b></li>
+          <li>Workshop Date: <b>November 9, 2024</b></li>
+        </ul> -->
+  </div>
+
+    
+  <div class="section" id="schedule">
+    <h2>Workshop Schedule</h2>
+    <ul></ul>
+    <style type="text/css">
+        .tg .tg-u4qn {
+            background-color: #D9D9D9;
+            text-align: left;
+            vertical-align: bottom
+        }
+    </style>
+
+<h2>Schedule</h2>
+<table>
+  <tr>
+    <th>Time (UTC+9, Korean Standard Time)</th>
+    <th>Event</th>
+  </tr>
+  <tr>
+    <td>09:30 - 09:35</td>
+    <td>Workshop Introduction</td>
+  </tr>
+  <tr>
+    <td>09:35 - 10:00</td>
+    <td>Invited Talk 1 and Q&A</td>
+  </tr>
+  <tr>
+    <td>10:00 - 10:30</td>
+    <td>Spotlight Session 1</td>
+  </tr>
+  <tr>
+    <td>10:30 - 11:30</td>
+    <td>Poster / Demo Session</td>
+  </tr>
+  <tr>
+    <td>11:30 - 12:00</td>
+    <td>Invited Talk 3 and Q&A</td>
+  </tr>
+  <tr>
+    <td>12:00 - 12:30</td>
+    <td>Invited Talk 4 and Q&A</td>
+  </tr>
+  <tr>
+    <td>12:30 - 13:30</td>
+    <td>Lunch Break</td>
+  </tr>
+  <tr>
+    <td>13:30 - 14:00</td>
+    <td>Invited Talk 5 and Q&A</td>
+  </tr>
+  <tr>
+    <td>14:00 - 14:30</td>
+    <td>Invited Talk 6 and Q&A</td>
+  </tr>
+  <tr>
+    <td>14:30 - 15:30</td>
+    <td>Poster / Demo Session</td>
+  </tr>
+  <tr>
+    <td>15:30 - 16:25</td>
+    <td>Panel Discussion</td>
+  </tr>
+  <tr>
+    <td>16:25 - 16:30</td>
+    <td>Closing Remark & Award</td>
+  </tr>
+</table>
+<ul></ul>
+</div>
+<br>
+  <!--  <div class="section" id="postersessions">-->
+  <!--    <h2>Poster Sessions (TBD after paper acceptance notification)</h2>-->
+  <!--  </div>-->
+
+  <div class="section" id="organizers">
+    <h2>Organizers</h2>
+    <div class="people">
+    <a href="https://kennyshaw.net/">
+      <img src="https://kennyshaw.net/images/profile.jfif">
+      <div>Kenneth Shaw</div>
+      <div class="aff">Carnegie Mellon University</div>
+    </a>
+    <a href="https://haozhi.io/">
+      <img src="https://haozhi.io/profile.jpg">
+      <div>Haozhi Qi</div>
+      <div class="aff">UC Berkeley</div>
+    </a>
+    <a href="https://irmakguzey.github.io/">
+      <img src="https://irmakguzey.github.io/assets/img/profile_photo.jpg">
+      <div>Irmak Guzey</div>
+      <div class="aff">New York University</div>
+    </a>
+    <a href="https://binghao-huang.github.io/">
+      <img src="https://binghao-huang.github.io/images/IMG_0205.jpg">
+      <div>Binghao Huang</div>
+      <div class="aff">Columbia Unviersity</div>
+    </a>
+    <a href="https://xiaolonw.github.io/">
+      <img src="https://xiaolonw.github.io/static/profile.jpg">
+      <div>Xiaolong Wang</div>
+      <div class="aff">UC San Diego</div>
+    </a>
+    <a href="https://www.cs.cmu.edu/~dpathak/">
+      <img src="https://www.cs.cmu.edu/~dpathak/images/Deepak_Pathak-compressed.jpeg">
+      <div>Deepak Pathak</div>
+      <div class="aff">Carnegie Mellon University</div>
+    </a>
+    </div>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>Contact</h2>
+    <div>For questions and comments, please <a href="mailto:kshaw2@andrew.cmu.edu">contact us.</a>
+    </div>
+  </div>
+
+  <div class="foot">
+    © CoRL 2025 Learning Dexterous Manipulation Workshop
+  </div>
+</div>
+
+
+</body>
+
+</html>
