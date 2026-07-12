@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>3rd Workshop on Dexterous Manipulation: Full-Stack Robotics on Learning and Design</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="nav">
+  <div class="nav-container">
+    <a href="./index.html#intro">Introduction</a>
+    <a href="./index.html#speakers">Speakers</a>
+    <a href="./index.html#schedule">Schedule</a>
+    <a href="./index.html#call">Call for Papers</a>
+    <a href="./index.html#organizers">Organizers</a>
+    <a href="./index.html#contact">Contact</a>
+  </div>
+</div>
+
+<div class="title-container">
+  <div style="text-align: center;">
+    <h1>3rd Workshop on Dexterous Manipulation: <br> Full-Stack Robotics on Learning and Design</h1>
+    <div class="subtitle" style="color: #ccc; margin: 20px">
+      CoRL 2026 Workshop<br>
+      (Half-day Afternoon Event &mdash; Date TBD)
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section" id="intro">
+    <h2>Introduction</h2>
+
+    <p>
+      Dexterous manipulation remains one of robotics' most difficult challenges. Although researchers have made
+      progress over several decades, robots still struggle to perform tasks that humans accomplish with ease.
+      Addressing this problem will require advances across mechanical design, motion planning, control, and machine
+      learning. This workshop will bring together experts from these areas to discuss the key gaps, emerging
+      approaches, and future directions for the field.
+    </p>
+
+    <p>
+      Rather than serving only as a venue for presenting recent results, the workshop will be structured around
+      <b>viewpoints, evidence, and reflection</b>. Invited speakers will articulate distinct perspectives on the
+      future of dexterous manipulation, while curated posters and live demonstrations from academia and industry
+      will provide concrete examples of the current state of the art.
+    </p>
+
+    <p>
+      Through this format, the workshop aims to help the community identify where different approaches agree, where
+      they diverge, and what evidence would be needed to change current assumptions. By connecting high-level
+      perspectives with real systems and open discussion, we hope to clarify shared bottlenecks and define concrete
+      priorities for building robust, generalizable, and deployable dexterous robotic systems.
+    </p>
+
+    <h3>Core Challenges &amp; Research Questions</h3>
+    <p>
+      The workshop is organized around several competing but complementary hypotheses for how dexterous manipulation
+      may scale. Rather than treating hardware, perception, control, and learning as separate topics, we ask how
+      these components interact and which bottlenecks must be resolved for dexterous manipulation to move beyond
+      isolated demonstrations.
+    </p>
+
+    <b>Evaluation and Evidence</b>
+    <ul>
+      <li>How should the community decide what is working? The field currently contains many impressive
+        demonstrations, but lacks shared standards for comparing progress across platforms and approaches.</li>
+      <li>What should count as evidence of general-purpose dexterity? Can the community develop benchmarks and
+        reporting practices that make it easier to compare hardware-first, control-first, and learning-first
+        approaches?</li>
+    </ul>
+
+    <b>Perception: Seeing and Feeling the World</b>
+    <ul>
+      <li>How can robotic systems extract useful information when the hand itself occludes the object or scene?</li>
+      <li>How can policies remain robust across changes in lighting, clutter, viewpoints, and unseen objects?</li>
+      <li>What role should tactile sensing play: can touch become as informative as vision for manipulation, or is
+        it primarily a complementary signal? What tactile sensor designs and representations are most useful for
+        scalable manipulation?</li>
+    </ul>
+
+    <b>Hardware: Redesigning Dexterous Hands</b>
+    <ul>
+      <li>What innovations are needed to make robotic hands more compact, efficient, durable, and capable?</li>
+      <li>How can future hand designs be smarter rather than simply stronger, and how can we improve hardware
+        longevity while reducing maintenance and cost?</li>
+    </ul>
+
+    <b>Scaling Robot Skill Learning</b>
+    <ul>
+      <li>Will dexterous manipulation be driven by general-purpose foundation models, or by task-specific models
+        tailored to particular objects, embodiments, and environments?</li>
+      <li>How can policies adapt to dynamic, forceful, or high-speed interactions?</li>
+      <li>Can the community standardize the collection and use of human hand data to better train and evaluate
+        robotic manipulation policies?</li>
+    </ul>
+
+    <b>Reinforcement Learning and Demonstration Data</b>
+    <ul>
+      <li>How can policies generalize from limited, noisy, or biased demonstrations?</li>
+      <li>What infrastructure and algorithms are needed to scale reinforcement learning across hundreds of
+        manipulation tasks with minimal intervention?</li>
+    </ul>
+  </div>
+
+  <div class="section" id="speakers">
+    <h2>Invited Speakers</h2>
+
+    <div class="people">
+      <a href="https://ankurhanda.github.io/" target="_blank">
+        <img src="./images/ankur_handa.png">
+        <div>Ankur Handa</div>
+        <div class="aff">NVIDIA Robotics</div>
+      </a>
+      <a href="https://srl.ethz.ch/the-group/robert-katzschmann.html" target="_blank">
+        <img src="./images/robert_katzschmann.jpg">
+        <div>Robert Katzschmann</div>
+        <div class="aff">ETH Zürich</div>
+      </a>
+      <a href="https://www.tu.berlin/go31479/" target="_blank">
+        <img src="./images/oliver_brock.jpg">
+        <div>Oliver Brock</div>
+        <div class="aff">TU Berlin</div>
+      </a>
+      <a href="https://profiles.stanford.edu/c-karen-liu" target="_blank">
+        <img src="https://profiles.stanford.edu/proxy/api/cap/profiles/211555/resources/profilephoto/350x350.1566448250851.jpg">
+        <div>Karen Liu</div>
+        <div class="aff">Stanford University</div>
+      </a>
+    </div>
+  </div>
+  <br>
+
+  <div class="section" id="schedule">
+    <h2>Workshop Schedule</h2>
+    <p>Tentative half-day afternoon schedule (subject to change):</p>
+    <table>
+      <tr>
+        <th>Time</th>
+        <th>Section</th>
+      </tr>
+      <tr>
+        <td>2:00 PM &ndash; 2:20 PM</td>
+        <td>Invited Speaker 1</td>
+      </tr>
+      <tr>
+        <td>2:20 PM &ndash; 2:40 PM</td>
+        <td>Invited Speaker 2</td>
+      </tr>
+      <tr>
+        <td>2:40 PM &ndash; 3:00 PM</td>
+        <td>Invited Speaker 3</td>
+      </tr>
+      <tr>
+        <td>3:00 PM &ndash; 3:30 PM</td>
+        <td>Spotlight Session</td>
+      </tr>
+      <tr>
+        <td>3:30 PM &ndash; 4:00 PM</td>
+        <td>Poster Session</td>
+      </tr>
+      <tr>
+        <td>4:00 PM &ndash; 4:40 PM</td>
+        <td>Live Demo Session</td>
+      </tr>
+      <tr>
+        <td>4:40 PM &ndash; 5:00 PM</td>
+        <td>Invited Speaker 4</td>
+      </tr>
+      <tr>
+        <td>5:00 PM &ndash; 5:55 PM</td>
+        <td>Panel Discussion</td>
+      </tr>
+      <tr>
+        <td>5:55 PM &ndash; 6:00 PM</td>
+        <td>Closing Remarks &amp; Award Announcement</td>
+      </tr>
+    </table>
+  </div>
+  <br>
+
+  <div class="section" id="call">
+    <h2>Call for Papers and Demos</h2>
+
+    <p>
+      We welcome submissions on both algorithmic and hardware advances in dexterous manipulation. Outstanding
+      submissions will receive awards, ensuring recognition for high-quality work. We especially encourage
+      submissions that clarify assumptions, report failure modes, compare alternative approaches, or provide
+      evidence for what is needed to move dexterous manipulation beyond isolated demonstrations.
+    </p>
+
+    <p>
+      Each accepted short paper will be eligible for a poster presentation, and selected papers will be invited to
+      give a short spotlight talk. <b>Note: poster and spotlight presentations must be given in person.</b>
+    </p>
+
+    <p>
+      We are particularly excited to provide a platform for showcasing real-world robotic systems.
+      <b style="color: darkblue">Even without a formal paper submission, we encourage submissions of videos
+      demonstrating your robots in action. For those attending in person, there will be dedicated opportunities to
+      showcase your robots live at the workshop!</b>
+    </p>
+
+    <p>
+      We encourage researchers to submit work in the following areas (the list is not exhaustive):
+    </p>
+
+    <ul>
+      <li><b>Evaluation and Evidence:</b> benchmarks, reporting standards, and shared protocols that compare
+        hardware-first, control-first, and learning-first approaches to dexterity.</li>
+      <li><b>Perception &mdash; Seeing &amp; Feeling the World:</b> robust visual perception under occlusion and
+        clutter, tactile sensor designs and representations, and multi-modal fusion for manipulation.</li>
+      <li><b>Hardware &mdash; Redesigning Dexterous Hands:</b> compact, efficient, durable, and capable hand designs;
+        soft and compliant mechanisms; durability and maintainability.</li>
+      <li><b>Scaling Robot Skill Learning:</b> general-purpose vs. task-specific policies, foundation models for
+        manipulation, dynamic / forceful / high-speed interactions, and standardized human-hand data.</li>
+      <li><b>Reinforcement Learning and Demonstration Data:</b> generalizing from limited or biased demonstrations,
+        infrastructure for scaling RL across many tasks with minimal intervention.</li>
+      <li><b>Sim-to-real and Data Generation:</b> simulation for contact-rich tasks, low-cost teleoperation, and
+        cross-embodiment transfer.</li>
+      <li>Any additional related topics in dexterous manipulation 😄</li>
+    </ul>
+
+    <h3>Submission Guidelines</h3>
+    <ul>
+      <li><b style="color: darkblue">Submission Portal for Papers and Demos:</b> OpenReview link &mdash; <b>coming
+        soon</b></li>
+
+      <li><b style="color: darkblue">Paper Submission Guidelines:</b></li>
+      <ul>
+        <li><b>Double-Blind Review:</b> The review process is strictly <b>double-blind</b>. Please ensure your
+          submission is fully anonymized. Do not include author names, affiliations, or identifying acknowledgements
+          in the main paper, appendix, or supplementary materials.</li>
+        <li><b>Paper Length:</b> Submissions should be up to <b>4 pages</b> maximum, excluding references,
+          acknowledgements, and appendices.</li>
+        <li><b>Format:</b>
+          <ul>
+            <li>Please follow the standard CoRL 2026 main conference format. Include references and appendices in
+              the same PDF as the main paper, and submit any optional videos as a zip file in the supplementary
+              material section.</li>
+            <li>The maximum file size is 100MB. More information on format can be found
+              <a href="https://www.corl.org/contributions/instruction-for-authors" target="_blank">here</a>.</li>
+          </ul>
+        </li>
+        <li><b>Review Process:</b>
+          <ul>
+            <li>All submissions will undergo a peer-review process and will be evaluated based on their relevance
+              and contribution to the workshop's topics.</li>
+            <li>Accepted submissions will be featured at the workshop through poster spotlight talks and poster
+              sessions.</li>
+          </ul>
+        </li>
+        <li><b>Dual Submissions:</b>
+          <ul>
+            <li>Papers in preparation or under review at other major venues are welcome.</li>
+            <li>Previously published works are also permitted, provided their publication status is explicitly
+              stated at the time of submission.</li>
+            <li>Note: per CoRL 2026 policy, full papers accepted to the main conference are discouraged from also
+              being submitted as workshop contributions.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <li><b style="color: darkblue">Demo Submission Guidelines:</b></li>
+      <ul>
+        <li><b>Summary Document:</b> Please upload a summary document as a PDF. There are no strict page limits or
+          formatting requirements for this document.</li>
+        <li><b>Demo Video:</b> Please upload demo videos as a single zip file under the supplementary material field
+          in OpenReview.</li>
+      </ul>
+
+      <li><b style="color: darkblue">Visibility:</b> Submissions and reviews will remain private. Only accepted
+        papers will be made public.</li>
+    </ul>
+
+    <h3>Timeline</h3>
+    <ul>
+      <li>Submission Portal Open: <b>TBD</b></li>
+      <li>Submission Deadline: <b>TBD</b></li>
+      <li>Notification: <b>TBD</b></li>
+      <li>Workshop Date: <b>TBD</b></li>
+    </ul>
+  </div>
+
+  <div class="section" id="organizers">
+    <h2>Organizers</h2>
+    <div class="people">
+      <a href="https://kennyshaw.net/" target="_blank">
+        <img src="./images/kenny_shaw.jfif">
+        <div>Kenneth Shaw</div>
+        <div class="aff">UIUC / Amazon FAR</div>
+      </a>
+      <a href="https://haozhi.io/" target="_blank">
+        <img src="./images/haozhi_qi.jpg">
+        <div>Haozhi Qi</div>
+        <div class="aff">University of Chicago</div>
+      </a>
+      <a href="https://yingyuan0414.github.io/" target="_blank">
+        <img src="https://yingyuan0414.github.io/personal_img_new.jpeg">
+        <div>Ying Yuan</div>
+        <div class="aff">Carnegie Mellon University</div>
+      </a>
+      <a href="https://kywind.github.io/" target="_blank">
+        <img src="./images/kaifeng_zhang.png">
+        <div>Kaifeng Zhang</div>
+        <div class="aff">Sharpa</div>
+      </a>
+      <a href="https://www.linkedin.com/in/yunfang-yang-73287178/" target="_blank">
+        <img src="./images/yunfang_yang.png">
+        <div>Yunfang Yang</div>
+        <div class="aff">Sharpa</div>
+      </a>
+      <a href="https://www.cs.cmu.edu/~dpathak/" target="_blank">
+        <img src="./images/deepak_pathak.jpeg">
+        <div>Deepak Pathak</div>
+        <div class="aff">Carnegie Mellon / Skild AI</div>
+      </a>
+      <a href="https://people.eecs.berkeley.edu/~malik/" target="_blank">
+        <img src="https://people.eecs.berkeley.edu/~malik/malik-color1.jpg">
+        <div>Jitendra Malik</div>
+        <div class="aff">UC Berkeley</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>Contact</h2>
+    <div>For questions and comments, please <a href="mailto:kshaww@amazon.com">contact us.</a></div>
+  </div>
+
+  <div class="foot">
+    © CoRL 2026 Dexterous Manipulation Workshop
+  </div>
+</div>
+
+
+</body>
+
+</html>

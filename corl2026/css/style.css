@@ -130,7 +130,7 @@ h3 {
 
 .container {
     margin: auto;
-    max-width: 1000px;
+    max-width: 1100px;
     padding: 40px 20px;
 }
 
@@ -166,7 +166,7 @@ th {
 
 .people > * {
     display: block;
-    width: 200px;
+    width: 150px;
     margin: 10px;
     text-decoration: none;
     color: inherit;
@@ -189,20 +189,6 @@ th {
     color: #000000;
 }
 
-.photo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 16px;
-}
-
-.photo-grid img {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-
 .foot {
     background: #333;
     padding: 5px 10%;
@@ -214,4 +200,20 @@ th {
     columns: 3;
     -webkit-columns: 3;
     -moz-columns: 3;
+}
+
+.people-group {
+  padding: 10px;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.round-rectangle {
+  border: 2px solid #000;
+  border-radius: 15px;
+}
+
+.rectangle {
+  border: 2px solid #000;
+  border-radius: 0;
 }
